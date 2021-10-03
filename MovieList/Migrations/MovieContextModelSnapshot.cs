@@ -133,7 +133,6 @@ namespace MovieList.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Genre");
                 });
 #pragma warning restore 612, 618
         }

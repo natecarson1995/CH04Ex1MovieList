@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MovieList.Models;
+using System.Linq;
 
 namespace MovieList.Migrations
 {
@@ -135,7 +136,6 @@ namespace MovieList.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Genre");
                 });
 #pragma warning restore 612, 618
         }
